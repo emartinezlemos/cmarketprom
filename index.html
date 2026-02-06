@@ -6,76 +6,118 @@
   <title>CMarket Promocionales | Artículos Promocionales Empresariales en Costa Rica</title>
   <meta name="description" content="Artículos promocionales empresariales en Costa Rica. Regalos corporativos personalizados para tu marca." />
   <style>
+    :root {
+      --primary: #0f766e;
+      --secondary: #14b8a6;
+      --accent: #d97706;
+      --bg-light: #f8fafc;
+      --text-dark: #1f2937;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      background-color: white;
     }
+
     header {
-      background: linear-gradient(135deg, #0f766e, #14b8a6);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
+
     header h1 {
-      margin-bottom: 10px;
-      font-size: 2.2rem;
+      margin-bottom: 14px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
+
     header p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      opacity: 0.95;
     }
+
     .cta-btn {
       background: white;
-      color: #0f766e;
-      padding: 14px 28px;
-      border-radius: 30px;
+      color: var(--primary);
+      padding: 16px 34px;
+      border-radius: 999px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       display: inline-block;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+    }
+
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
     }
+
     h2 {
       text-align: center;
-      margin-bottom: 40px;
-      color: #0f766e;
+      margin-bottom: 50px;
+      color: var(--primary);
+      font-size: 2rem;
+      letter-spacing: -0.4px;
     }
+
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
     }
+
     .card {
-      background: #f9fafb;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      background: var(--bg-light);
+      border-radius: 22px;
+      padding: 32px 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
       text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+
     .card h3 {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
     }
+
     .instagram {
       text-align: center;
-      background: #f0fdfa;
-      border-radius: 20px;
+      background: linear-gradient(135deg, #ecfeff, #f0fdfa);
+      border-radius: 32px;
+      padding: 70px 20px;
     }
+
     footer {
-      background: #0f766e;
+      background: #0b5f58;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
+      font-size: 0.95rem;
     }
+
     footer a {
       color: #bbf7d0;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -108,23 +150,24 @@
       </div>
     </div>
   </section>
-<section>
-  <h2>Clientes y Testimonios</h2>
-  <div class="services">
-    <div class="card">
-      <p>"Excelente calidad y entrega puntual. Nuestros clientes quedaron encantados con los promocionales."</p>
-      <strong>— Empresa Corporativa CR</strong>
+
+    <section>
+    <h2>Clientes y Testimonios</h2>
+    <div class="services">
+      <div class="card">
+        <p>"Excelente calidad y entrega puntual. Nuestros clientes quedaron encantados con los promocionales."</p>
+        <strong>— Empresa Corporativa CR</strong>
+      </div>
+      <div class="card">
+        <p>"Muy buena atención y productos personalizados justo como los necesitábamos."</p>
+        <strong>— PyME en San José</strong>
+      </div>
+      <div class="card">
+        <p>"Recomendados 100%. Ideal para regalos empresariales y eventos."</p>
+        <strong>— Cliente Empresarial</strong>
+      </div>
     </div>
-    <div class="card">
-      <p>"Muy buena atención y productos personalizados justo como los necesitábamos."</p>
-      <strong>— PyME en San José</strong>
-    </div>
-    <div class="card">
-      <p>"Recomendados 100%. Ideal para regalos empresariales y eventos."</p>
-      <strong>— Cliente Empresarial</strong>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section class="instagram">
     <h2>Síguenos en Instagram</h2>
